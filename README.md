@@ -15,6 +15,47 @@ cd europa_exploration_nodejs
 npm install
 ```
 
+---
+
+## Running Modes
+
+This project supports two main modes for running the application:
+
+### 1. **Production Mode (`npm start`)**
+
+- Runs the app as it would be used in production.
+- Expects input via standard input (file or interactive).
+- Minimal logging, only essential output.
+
+**Usage:**
+
+```bash
+npm start < input.txt      # From a file
+npm start                 # Interactive mode
+```
+
+### 2. **Development Mode (`npm run dev`)**
+
+- Runs the app with extra logging and developer-friendly output.
+- Useful for debugging, development, and seeing more detailed logs.
+
+**Usage:**
+
+```bash
+npm run dev < input.txt   # From a file, with dev logs
+npm run dev               # Interactive mode, with dev logs
+```
+
+---
+
+## Assumptions
+
+- If the robot encounters the edge of the plateau and a move would take it outside the boundaries, **the robot does not move** and simply skips that instruction.
+- In **production mode**, this skipped move is silent (no output).
+- In **development mode**, an error message is printed to indicate the robot attempted to move beyond the edge.
+
+---
+
 ## Input Format
 
 The program processes robot navigation instructions in the following sequence:
@@ -48,6 +89,8 @@ The program processes robot navigation instructions in the following sequence:
 LMLMLMLMM
 3 3 E
 ```
+
+---
 
 ## Running the Program
 

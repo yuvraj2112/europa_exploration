@@ -7,6 +7,7 @@
   "type": "commonjs",
   "main": "src/index.js",
   "scripts": {
+    "dev": "cross-env DEBUG=true node src/index.js",
     "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
@@ -21,6 +22,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
+    "cross-env": "^10.0.0",
     "eslint": "^9.33.0",
     "globals": "^16.3.0",
     "husky": "^9.1.7"
