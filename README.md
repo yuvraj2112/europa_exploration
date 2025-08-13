@@ -10,7 +10,7 @@ The program reads a plateau size, initial robot position, and movement commands,
 ## Installation
 
 ```bash
-git clone europa_exploration_nodejs
+git clone https://github.com/yuvraj2112/europa_exploration
 cd europa_exploration_nodejs
 npm install
 ```

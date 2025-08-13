@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "cross-env DEBUG=true node src/index.js",
     "start": "node src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepare": "husky"
@@ -24,7 +24,9 @@
     "@eslint/js": "^9.33.0",
     "cross-env": "^10.0.0",
     "eslint": "^9.33.0",
+    "eslint-plugin-jest": "^29.0.1",
     "globals": "^16.3.0",
-    "husky": "^9.1.7"
+    "husky": "^9.1.7",
+    "jest": "^30.0.5"
   }
 }
